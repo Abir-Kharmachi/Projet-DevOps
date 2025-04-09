@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Results</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+        /* Additional spacing for tables */
+        table {
+            margin-top: 20px; /* Adjust as needed */
+        }
+
+        /* Style for images in the weather container */
+        .weather-container img {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div th:replace="fragments/navbar"></div>
+
+<!-- Center the Weather Results heading -->
+<div class="container mt-4 text-center">
+    <h2>Weather Results for <span th:text="${address}"></span></h2>
+</div>
+
+<!-- User Address Information -->
+<div class="container mt-4">
+    <div class="weather-container text-center">
+        <img class="img-fluid" th:src="@{https://static.vecteezy.com/system/resources/thumbnails/014/301/029/small_2x/red-pin-for-pointing-the-destination-on-the-map-3d-illustration-png.png}" alt="Latitude and Longitude Image"/>
+        <h3 class="my-3">Address Position in Earth</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered bg-info text-white">
+                <thead>
+                <tr>
+                    <th scope="col">Address</th>
+                    <th scope="col">Latitude</th>
+                    <th scope="col">Longitude</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td th:text="${address}"></td>
+                    <td th:text="${latitude}"></td>
+                    <td th:text="${longitude}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Weather Information at Address -->
+<div class="container mt-4">
+    <div class="weather-container text-center">
+        <img class="img-fluid" th:src="@{https://static.vecteezy.com/system/resources/thumbnails/008/854/797/small_2x/sunny-and-rainy-cloudy-day-weather-forecast-icon-meteorological-sign-3d-render-png.png}" alt="Sun Image"/>
+        <h3 class="my-3">Weather</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered bg-info text-white">
+                <thead>
+                <tr>
+                    <th scope="col">Temperature Min</th>
+                    <th scope="col">Temperature Max</th>
+                    <th scope="col">Rain Probability</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td th:text="${temperature_minimale}"></td>
+                    <td th:text="${temperature_maximale}"></td>
+                    <td th:text="${probabilite_pluie}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Adresses</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 2rem;
+      color: #007bff;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+      margin: 10px auto;
+      padding: 15px;
+      max-width: 600px;
+      text-align: center;
+      font-size: 1rem;
+      color: #333;
+      transition: background-color 0.3s ease;
+    }
+
+    li:hover {
+      background-color: #e9ecef;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    /* For responsiveness */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p, li {
+        font-size: 1rem;
+      }
+
+      .container {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Inclusion du fragment navbar.html -->
+<div th:replace="fragments/navbar"></div>
+
+<div class="container">
+  <!-- Contenu spécifique de la page addresses -->
+  <h1>Les différentes adresses</h1>
+
+  <!-- Afficher 'searchedBy' seulement si non null -->
+  <p th:if="${searchedBy != null}" th:text="'Recherchées par : ' + ${searchedBy}"></p>
+
+  <ul th:each="address : ${allAddresses}">
+    <li th:text="${address.content + ' - Auteur : ' + address.auteur}"></li>
+  </ul>
+</div>
+
+<script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

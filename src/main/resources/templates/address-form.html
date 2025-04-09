@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Address Form</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <style>
+
+    body {
+      background-color: #f4f7f6; /* Couleur de fond douce pour la page */
+    }
+
+    .container {
+      background-color: #ffffff; /* Fond blanc pour le formulaire */
+      border-radius: 8px; /* Coins arrondis */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+      padding: 30px;
+    }
+
+    .form-label {
+      font-weight: bold;
+      color: #333; /* Couleur sombre pour le label */
+    }
+
+    .form-control {
+      border-radius: 5px; /* Coins arrondis pour les champs de texte */
+      border: 1px solid #ddd; /* Bordure grise claire */
+    }
+
+    .form-control:focus {
+      border-color: #007bff; /* Bordure bleue lors du focus */
+      box-shadow: 0 0 0 0.25rem rgba(38, 143, 255, 0.25); /* Ombre bleue lors du focus */
+    }
+
+  </style>
+</head>
+<body>
+<div th:replace="fragments/navbar"></div>
+
+<div class="container mt-4">
+  <h2 class="text-center mb-4"> Weather !!!!!!!</h2>
+  <form action="/meteo" method="post">
+    <div class="mb-3">
+      <label for="address" class="form-label">give me your address:</label>
+      <input name="address" id="address" class="form-control" placeholder="Enter your address">
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-outline-primary">Get the weather</button>
+    </div>
+
+  </form>
+</div>
+
+<script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
