@@ -21,10 +21,10 @@ jobs:
             java-version: '8'
 
       - name: Build et Déploiement
-        working-directory: .
+        working-directory: TP_Abir_KHARMACHI/TP
         run: |
           mvn clean install 
-          docker build -t abirkharmachi/imgspring:latest .
+          docker build -f ../../Dockerfile -t abirkharmachi/imgspring:latest ../../ 
 
       - name: Login to Docker Hub
         uses: docker/login-action@v2
