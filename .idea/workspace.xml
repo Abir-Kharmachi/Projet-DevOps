@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="11551b79-7881-4c8b-9f17-0c161cc3e3c6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TP.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/java/com/example/TP/Controller/AddressController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/java/com/example/TP/Controller/FormAController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/java/com/example/TP/Controller/HelloWorldController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/java/com/example/TP/Controller/MeteoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/java/com/example/TP/Model/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/java/com/example/TP/Model/AddressRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/java/com/example/TP/Model/Etalab.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/java/com/example/TP/Model/Feature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/java/com/example/TP/Model/Geometry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/java/com/example/TP/Model/MeteoConcept.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/java/com/example/TP/Model/Properties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/java/com/example/TP/TpApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/static/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/templates/address.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/templates/addresses.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/templates/greeting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/templates/meteo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/main/resources/templates/navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP/src/test/java/com/example/TP/TpApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2vUm3H5mhSKNhRD6PQQVtyz5D7Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.TP [clean,install].executor": "Run",
+    "Maven.TP [clean].executor": "Run",
+    "Maven.TP [install:install].executor": "Run",
+    "Maven.TP [install].executor": "Run",
+    "Maven.TP [jar:jar].executor": "Run",
+    "Maven.TP [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.TP [org.apache.maven.plugins:maven-install-plugin:2.5.2:install].executor": "Run",
+    "Maven.TP [org.apache.maven.plugins:maven-jar-plugin:3.2.2:jar].executor": "Run",
+    "Maven.TP [validate].executor": "Run",
+    "Maven.TP [verify].executor": "Run",
+    "Maven.TP3 [clean].executor": "Run",
+    "Maven.TP3 [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.DemoApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/pc/Desktop/projet/Projet-DevOps",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="SringBootTP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TP [clean]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="TP [clean,install]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="TP [install]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="TP [install:install]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install:install" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="TP [jar:jar]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="jar:jar" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="TP" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tphedi.tp.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Maven.TP [jar:jar]" />
+        <item itemvalue="Maven.TP [install]" />
+        <item itemvalue="Maven.TP [clean]" />
+        <item itemvalue="Maven.TP [install:install]" />
+        <item itemvalue="Maven.TP [clean,install]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="11551b79-7881-4c8b-9f17-0c161cc3e3c6" name="Changes" comment="" />
+      <created>1744207827950</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744207827950</updated>
+      <workItem from="1744207829318" duration="2430000" />
+      <workItem from="1744214090385" duration="1010000" />
+      <workItem from="1744215164249" duration="128000" />
+      <workItem from="1744358407439" duration="24000" />
+      <workItem from="1744358655747" duration="346000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

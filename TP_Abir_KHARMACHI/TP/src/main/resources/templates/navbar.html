@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+<div th:fragment="navbar">
+    <nav class="navbar navbar-dark bg-success">
+
+        <a class="navbar-brand" th:href="@{/greeting}">Bienvenue</a>
+        <a class="navbar-brand" th:href="@{/adresses}">Toutes les adresses</a>
+        <a class="navbar-brand" th:href="@{/address}">Trouver des informations</a>
+
+    </nav>
+</div>
+</body>
+</html>

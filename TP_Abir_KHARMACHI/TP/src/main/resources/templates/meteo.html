@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <style>
+    body {
+    background-image: url('https://img.freepik.com/free-vector/flat-design-monsoon-season-clouds-illustration_23-2149424294.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <title>Meteo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+<header th:insert="navbar :: navbar"></header>
+
+<div class="container my-4">
+
+
+    <div class="card bg-success text-white mb-5">
+        <div class="card-header">
+            <h3 class="card-title">City information : <span th:text="${Country}"></span></h3>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Address</th>
+                    <th scope="col">Latitude</th>
+                    <th scope="col">Longitude</th>
+                    <th scope="col">Altitude</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+
+                    <td th:text="${Address}"/>
+                    <td th:text="${Lat}"/>
+                    <td th:text="${Long}"/>
+                    <td th:text="${Alt}"/>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="card bg-success text-white">
+        <div class="card-header">
+            <h3 class="card-title">Weather information : <span th:text="${datetime}"></span></h3>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Minimum Temp</th>
+                    <th scope="col">Maximum Temp</th>
+                    <th scope="col">Wind</th>
+                    <th scope="col">Fog Prob</th>
+                    <th scope="col">Rain Prob</th>
+
+                    <th scope="col">Sun hours</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td th:text="${minimum_Temperature}"/>
+                    <td th:text="${maximum_Temperature}"/>
+                    <td th:text="${Wind_Speed}"/>
+                    <td th:text="${fog_Prob}"/>
+                    <td th:text="${rain_Prob}"/>
+                    <td th:text="${Sun}"/>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

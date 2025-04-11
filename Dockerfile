@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copier le fichier jar dans le répertoire de travail
-COPY TP-0.0.1-SNAPSHOT.jar app.jar
+COPY TP3-0.0.1-SNAPSHOT.jar app.jar
 
 # Exposer le port que votre application utilise
 EXPOSE 8080
