@@ -7,6 +7,9 @@ on:
     paths:
       - '**'
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -17,8 +20,8 @@ jobs:
 
       - uses: actions/setup-java@v3
         with:
-            distribution: 'temurin'
-            java-version: '21'
+          distribution: 'temurin'
+          java-version: '21'
 
       - name: Build et Déploiement
         working-directory: TP_Abir_KHARMACHI/TP
@@ -34,3 +37,11 @@ jobs:
 
       - name: Push Docker Images to Docker Hub
         run: docker push abirkharmachi/imgspring:latest
+
+      - name: Création du tag Git (v1.0.0)
+        if: github.ref == 'refs/heads/main' && success()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git tag v1.0.0
+          git push origin v1.0.0
