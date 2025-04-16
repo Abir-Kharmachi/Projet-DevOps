@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  springapp:
+    image: abirkharmachi/imgspring:latest
+    container_name: springboot_app
+    ports:
+      - "9092:9091"
+    restart: unless-stopped
