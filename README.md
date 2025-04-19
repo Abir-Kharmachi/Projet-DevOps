@@ -43,3 +43,7 @@ docker compose pull
 docker compose up -d
 tester avec :
 http://localhost:9092/greeting?name=ENSIM
+
+### Problèmes rencontrés
+- Erreur de version Java dans GitHub Actions : le script CI utilisait une version de Java incompatible avec le projet. Résolu en définissant la bonne version.
+- Erreur de chemin dans le Dockerfile : au début, les chemins relatifs dans le `Dockerfile` ne pointaient pas correctement vers les fichiers `.jar` générés par Maven. J’ai corrigé ça en ajustant le `COPY` pour viser le bon dossier `target/`.
