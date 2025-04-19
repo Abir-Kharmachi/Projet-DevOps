@@ -7,27 +7,32 @@ Ce projet a été réalisé dans le cadre du TP final de DevOps. Il met en prati
 - La conteneurisation avec Docker
 - L’orchestration avec Docker Compose
 - L’intégration continue avec GitHub Actions
+- Création automatique de tags Git
+
 
 
 ## Description du projet
 
-Il s'agit d'une API REST simple développée avec Spring Boot.  
-Elle expose une route `/greeting` qui retourne un message personnalisé :
+Ce projet est une application Java Spring Boot qui propose une interface web permettant de :
+
+- Consulter des **adresses enregistrées**
+- Ajouter une **nouvelle adresse**
+- Obtenir un message d'accueil
+- Tester une **météo simulée** à une adresse
+
+L’application est conteneurisée avec Docker, lancée avec Docker Compose, et automatisée avec GitHub Actions.
+
 
 **Exemple d’URL :**  
-http://localhost:9092/greeting?name=ENSIM
+- Accueil : `http://localhost:9092/greeting`
+- Liste des adresses : `http://localhost:9092/adresses`
+- Formulaire météo : `http://localhost:9092/address`
 
-## Initialisation du projet Git
+##  Cloner le projet
 
-git init
+git clone https://github.com/Abir-Kharmachi/Projet-DevOps.git
 
-git remote add origin https://github.com/Abir-Kharmachi/Projet-DevOps.git
-
-git add .
-
-git commit -m "Initial commit"
-
-git push -u origin main
+cd Projet-DevOps
 
 
 ### Dockerfile
@@ -46,7 +51,7 @@ ports:
 docker compose pull
 docker compose up -d
 tester avec :
-http://localhost:9092/greeting?name=ENSIM
+http://localhost:9092/greeting
 
 ### Problèmes rencontrés
 - Erreur de version Java dans GitHub Actions : le script CI utilisait une version de Java incompatible avec le projet. Résolu en définissant la bonne version.
