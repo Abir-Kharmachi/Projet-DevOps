@@ -46,6 +46,17 @@ ports:
   - "9092:9091"
   d'ou l’application écoute en interne sur le port 9091, redirigé en local sur 9092.
 
+### Intégration Continue (CI)
+À chaque push sur la branche main :
+
+ -Le projet est compilé (mvn clean install)
+
+ -Une image Docker est construite et poussée
+
+ -Un tag Git est généré automatiquement (v1.0.0) si non existant
+
+ -Une simulation de déploiement est affichée
+
 ### Lancer le projet
 
 docker compose pull
@@ -54,5 +65,9 @@ tester avec :
 http://localhost:9092/greeting
 
 ### Problèmes rencontrés
-- Erreur de version Java dans GitHub Actions : le script CI utilisait une version de Java incompatible avec le projet. Résolu en définissant la bonne version.
-- Erreur de chemin dans le Dockerfile : au début, les chemins relatifs dans le `Dockerfile` ne pointaient pas correctement vers les fichiers `.jar` générés par Maven. J’ai corrigé ça en ajustant le `COPY` pour viser le bon dossier `target/`.
+Problèmes rencontrés
+-Erreur de version Java : corrigé en passant à Java 21 dans Dockerfile et GitHub Actions.
+
+-Conflit de tag Git : solution ajoutée pour ignorer si v1.0.0 existe déjà.
+
+-Problème d’indentation YAML : corrigé dans docker-compose.yml avec un bon format ports.
