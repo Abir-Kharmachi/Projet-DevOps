@@ -65,7 +65,6 @@ tester avec :
 http://localhost:9092/greeting
 
 ### Problèmes rencontrés
-Problèmes rencontrés
 -Erreur de version Java : corrigé en passant à Java 21 dans Dockerfile et GitHub Actions.
 
 -Conflit de tag Git : solution ajoutée pour ignorer si v1.0.0 existe déjà.
