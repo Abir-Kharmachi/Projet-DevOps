@@ -20,9 +20,13 @@ http://localhost:9092/greeting?name=ENSIM
 ## Initialisation du projet Git
 
 git init
+
 git remote add origin https://github.com/Abir-Kharmachi/Projet-DevOps.git
+
 git add .
+
 git commit -m "Initial commit"
+
 git push -u origin main
 
 
